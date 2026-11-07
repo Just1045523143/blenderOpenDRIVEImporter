@@ -59,9 +59,9 @@ struct RoadObjectsMesh : public RoadsMesh
 struct RoadNetworkMesh
 {
     Mesh3D get_mesh() const;
-    Mesh3D RoadNetworkMesh::get_roadmarks_mesh() const;
-    Mesh3D RoadNetworkMesh::get_roadobjects_mesh() const;
-    Mesh3D RoadNetworkMesh::get_lanes_mesh() const;
+    Mesh3D get_roadmarks_mesh() const;
+    Mesh3D get_roadobjects_mesh() const;
+    Mesh3D get_lanes_mesh() const;
 
     LanesMesh       lanes_mesh;
     RoadmarksMesh   roadmarks_mesh;

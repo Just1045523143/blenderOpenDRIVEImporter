@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OpenDRIVE>
+  <header revMajor="1" revMinor="7" name="Untitled" version="1.00" date="2026-10-18T02:29:13.420Z" north="45.2608609298758" south="23.466121984531817" east="3467.523115712483" west="73.55444518256742" vendor="opendrive-editor">
+    <geoReference><![CDATA[+proj=tmerc +lat_0=31.14 +lon_0=121.103 +k=1 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs]]></geoReference>
+  </header>
+  <road name="Road 1" length="3393.963846163709" id="1" junction="-1">
+    <type s="0" type="town">
+      <speed max="50" unit="km/h"/>
+    </type>
+    <planView>
+      <geometry s="0" x="73.55690389024657" y="33.96612169666308" hdg="0.000234162638250448" length="3393.963846163709">
+        <line/>
+      </geometry>
+    </planView>
+    <elevationProfile>
+      <elevation s="0" a="0" b="0" c="0" d="0"/>
+    </elevationProfile>
+    <lanes>
+      <laneSection s="0">
+        <left>
+          <lane id="3" type="driving">
+            <width sOffset="0" a="3.5" b="0" c="0" d="0"/>
+            <roadMark sOffset="0" type="solid" color="white" width="0.15"/>
+          </lane>
+          <lane id="2" type="driving">
+            <width sOffset="0" a="3.5" b="0" c="0" d="0"/>
+            <roadMark sOffset="0" type="broken" color="white" width="0.15"/>
+          </lane>
+          <lane id="1" type="driving">
+            <width sOffset="0" a="3.5" b="0" c="0" d="0"/>
+            <roadMark sOffset="0" type="broken" color="white" width="0.15"/>
+          </lane>
+        </left>
+        <center>
+          <lane id="0" type="none">
+            <roadMark sOffset="0" type="solid" color="yellow" width="0.15"/>
+          </lane>
+        </center>
+        <right>
+          <lane id="-1" type="driving">
+            <width sOffset="0" a="3.5" b="0" c="0" d="0"/>
+            <roadMark sOffset="0" type="broken" color="white" width="0.15"/>
+          </lane>
+          <lane id="-2" type="driving">
+            <width sOffset="0" a="3.5" b="0" c="0" d="0"/>
+            <roadMark sOffset="0" type="broken" color="white" width="0.15"/>
+          </lane>
+          <lane id="-3" type="driving">
+            <width sOffset="0" a="3.5" b="0" c="0" d="0"/>
+            <roadMark sOffset="0" type="solid" color="white" width="0.15"/>
+          </lane>
+        </right>
+      </laneSection>
+    </lanes>
+  </road>
+</OpenDRIVE>
