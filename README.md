@@ -34,3 +34,23 @@ As an experiment, I added some GPT-4 API calls along with this pipeline to accep
 - You can also manually import the map into CARLA. I wrote a step-by-step guide to do so [here](https://github.com/johschmitz/blender-driving-scenario-creator/issues/23)
 - Once you have imported the map into CARLA, you can develop the python scripting using the CARLA python API or use the CARLA scenario runner to run traffic in the scene.
 
+* 在本地创建了新的python blender环境，并安装scenariogeneration
+```bash
+blender-python环境
+pip3 install scenariogeneration
+```
+编译libOpenDRIVE
+```bash
+cd libOpenDRIVE
+mkdir build && cd build
+cmake ..
+make
+```
+根据xodr生成obj文件，会在output目录下生成obj文件
+```bash
+./libOpenDRIVE/build/test-xodr junction.xodr
+```
+调用 Blender 导入并导出 fbx
+```bash
+blender --background --python import.py -- lanes.obj roadmarkings.obj output.fbx
+```
